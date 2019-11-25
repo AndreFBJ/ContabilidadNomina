@@ -7,9 +7,10 @@ public class DevengadosAdiciones {
 	private int extraNocturna;
 	private int extraFestivoCompleto;
 	private int extraFestivoDiurna;
-	private int ExtraFestivoNocturna;
+	private int extraFestivoNocturna;
 	private int bonificaciones;
 	private int comisiones;
+	
 	public int getAuxTransporte() {
 		return auxTransporte;
 	}
@@ -41,10 +42,10 @@ public class DevengadosAdiciones {
 		this.extraFestivoDiurna = extraFestivoDiurna;
 	}
 	public int getExtraFestivoNocturna() {
-		return ExtraFestivoNocturna;
+		return extraFestivoNocturna;
 	}
 	public void setExtraFestivoNocturna(int extraFestivoNocturna) {
-		ExtraFestivoNocturna = extraFestivoNocturna;
+		extraFestivoNocturna = extraFestivoNocturna;
 	}
 	public int getBonificaciones() {
 		return bonificaciones;
@@ -61,7 +62,7 @@ public class DevengadosAdiciones {
 	
 	
 	//FUNCION PARA CALCULAR SI APLICA O NO EL AUXILIO DE TRNASPORTE
-	public int AuxTrans(Empleado empleado, DevengadosAdiciones auxTransporte) {
+	public int auxTrans(Empleado empleado, DevengadosAdiciones auxTransporte) {
 		if(empleado.getSueldoBasico() < 1656232)
     	{
     		auxTransporte.setAuxTransporte(empleado.getSueldoBasico()+97032);
@@ -73,5 +74,54 @@ public class DevengadosAdiciones {
 		
 		return auxTransporte.getAuxTransporte();
 	}
-
+	
+	public int horaExtraDiurna(Empleado empleado) {
+		
+		this.extraDiurna = 0;
+		this.extraNocturna = 0;
+		this.extraFestivoCompleto = 0;
+		this.extraFestivoDiurna = 0;
+		this.extraFestivoNocturna = 0; 
+		
+		if(extraDiurna > 0) {
+			int valorHora = empleado.getSueldoBasico()/240;
+			double valorDiurna = (valorHora*1.25)*2 ;	
+		}
+	}
+	
+	public int horaExtraNocturna(Empleado empleado) {
+		 this.extraNocturna = 0;
+		 
+		 if(extraNocturna > 0) {
+			 int valorHora = empleado.getSueldoBasico()/240;
+			 double valorNocturno = (valorHora*1.25)*2;
+		 }
+	}
+	
+	public int horaExtraFestivoCompleto(Empleado empleado) {
+		this.extraFestivoCompleto = 0;
+		
+		if(extraFestivoCompleto > 0) {
+			int valorHora = empleado.getSueldoBasico()/240;
+			double valorFestiComple = (valorHora*1.25)*2;
+		}
+	}
+	
+	public int horaExtraFestivoDiurno(Empleado empleado) {
+		this.extraFestivoDiurna = 0;
+		
+		if(extraFestivoDiurna > 0) {
+			int valorHora = empleado.getSueldoBasico()/240;
+			double valorFestiDiur = (valorHora*1.25)*2;
+		}
+	}
+	
+	public int horaExtraFestivoNocturno(Empleado empleado) {
+		this.extraFestivoNocturna = 0;
+		
+		if(extraFestivoNocturna > 0) {
+			int valorHora = empleado.getSueldoBasico()/240;
+			double valorFestiNoctur = (valorHora*1.25)*2;
+		}
+	} 
 }
