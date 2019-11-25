@@ -75,14 +75,18 @@ public class DevengadosAdiciones {
 		return auxTransporte.getAuxTransporte();
 	}
 	
-	public int horaExtraDiurna(Empleado empleado) {
+	//CALCULAR HORA EXTRA DIURNA
+	public int horaExtraDiurna(Empleado empleado, DevengadosAdiciones horaExtra) {
 		
-		this.extraDiurna = 0;
+		horaExtra.setExtraDiurna(0);
 		
-		if(extraDiurna > 0) {
+		if(horaExtra.getExtraDiurna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
 			double valorDiurna = (valorHora*1.25)*extraDiurna ;	
+			
+			
 		}
+		return horaExtra.getExtraDiurna();
 	}
 	
 	public int horaExtraNocturna(Empleado empleado) {

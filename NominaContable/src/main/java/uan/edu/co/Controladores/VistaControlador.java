@@ -1,5 +1,7 @@
 package uan.edu.co.Controladores;
 
+
+import uan.edu.co.NominaContable.*;
 import java.awt.event.ActionEvent;
 
 import javafx.fxml.FXML;
@@ -8,6 +10,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 public class VistaControlador {
+	
+	Empleado empleado1 = new Empleado();
+	DevengadosAdiciones devengado1 = new DevengadosAdiciones();
 
 	@FXML
     private TextField sueldoEmp1;
@@ -209,7 +214,11 @@ public class VistaControlador {
     
     @FXML
     void calculoTotalNomina(ActionEvent event) {
-
+    	empleado1.setNombre("empleado 1");
+    	int sueldo=Integer.parseInt(sueldoEmp1.getText());
+    	empleado1.setSueldoBasico(sueldo);
+    	
+    	devengado1.auxTrans(empleado1, devengado1);
     }
 
 }
