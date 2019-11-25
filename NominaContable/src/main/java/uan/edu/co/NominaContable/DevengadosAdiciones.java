@@ -78,10 +78,6 @@ public class DevengadosAdiciones {
 	public int horaExtraDiurna(Empleado empleado) {
 		
 		this.extraDiurna = 0;
-		this.extraNocturna = 0;
-		this.extraFestivoCompleto = 0;
-		this.extraFestivoDiurna = 0;
-		this.extraFestivoNocturna = 0; 
 		
 		if(extraDiurna > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
@@ -105,6 +101,8 @@ public class DevengadosAdiciones {
 			int valorHora = empleado.getSueldoBasico()/240;
 			double valorFestiComple = (valorHora*1.25)*2;
 		}
+		
+		return 
 	}
 	
 	public int horaExtraFestivoDiurno(Empleado empleado) {
