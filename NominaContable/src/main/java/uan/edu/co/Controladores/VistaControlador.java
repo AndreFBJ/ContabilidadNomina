@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 
 public class VistaControlador {
 
-    @FXML
+	@FXML
     private TextField sueldoEmp1;
 
     @FXML
@@ -188,19 +188,19 @@ public class VistaControlador {
     private RadioButton festDiaEmp5;
 
     @FXML
-    private TextField prestamoEmp13;
+    private TextField prestamoEmp5;
 
     @FXML
-    private RadioButton saludEmp13;
+    private RadioButton saludEmp5;
 
     @FXML
-    private RadioButton pensionEmp13;
+    private RadioButton pensionEmp5;
 
     @FXML
-    private RadioButton embargoEmp13;
+    private RadioButton embargoEmp5;
 
     @FXML
-    private RadioButton fondoEmp13;
+    private RadioButton fondoEmp5;
 
     @FXML
     private Button generarNominaTotal;

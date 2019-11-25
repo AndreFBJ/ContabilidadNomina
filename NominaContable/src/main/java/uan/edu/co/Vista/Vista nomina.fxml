@@ -543,7 +543,7 @@
                                                 <Font size="22.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="prestamoEmp13" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <TextField fx:id="prestamoEmp5" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
                                           <Label layoutX="700.0" layoutY="131.0" text="Embargo">
                                              <font>
                                                 <Font size="22.0" />
@@ -554,10 +554,10 @@
                                                 <Font size="22.0" />
                                              </font>
                                           </Label>
-                                          <RadioButton fx:id="saludEmp13" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
-                                          <RadioButton fx:id="pensionEmp13" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
-                                          <RadioButton fx:id="embargoEmp13" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
-                                          <RadioButton fx:id="fondoEmp13" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="saludEmp5" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp5" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp5" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp5" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
                                        </children>
                                     </AnchorPane>
                                  </content>
