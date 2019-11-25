@@ -1,10 +1,8 @@
 package uan.edu.co.NominaContable;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import uan.edu.co.Controladores.*;
+import java.util.Scanner;
+public class App
 {
     public static void main( String[] args )
     {
@@ -17,6 +15,7 @@ public class App
     	Empleado empleado5 = new Empleado();
     	
     	DevengadosAdiciones devengados = new DevengadosAdiciones();
+    	VistaControlador controller = new VistaControlador();
     	
     	empleado1.setNombre("empleado 1");
     	empleado2.setNombre("empleado 2");
