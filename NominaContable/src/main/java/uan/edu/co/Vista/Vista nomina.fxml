@@ -575,7 +575,7 @@
             <Font size="64.0" />
          </font>
       </Label>
-      <Button fx:id="generarNominaTotal" layoutX="439.0" layoutY="28.0" mnemonicParsing="false" text="Generar Nómina">
+      <Button fx:id="generarNominaTotal" layoutX="439.0" layoutY="28.0" mnemonicParsing="false" onAction="#calculoTotalNomina" text="Generar Nómina">
          <font>
             <Font size="18.0" />
          </font>

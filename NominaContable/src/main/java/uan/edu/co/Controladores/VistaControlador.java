@@ -1,5 +1,7 @@
 package uan.edu.co.Controladores;
 
+import java.awt.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -204,5 +206,10 @@ public class VistaControlador {
 
     @FXML
     private Button generarNominaTotal;
+    
+    @FXML
+    void calculoTotalNomina(ActionEvent event) {
+
+    }
 
 }
