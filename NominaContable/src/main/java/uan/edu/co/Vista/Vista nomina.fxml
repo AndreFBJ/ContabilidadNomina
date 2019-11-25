@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="94.0" prefHeight="525.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Empleado 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="724.0">
+                     <children>
+                        <TabPane layoutX="1.0" layoutY="1.0" prefHeight="497.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Devengados">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="1039.0">
+                                       <children>
+                                          <TextField fx:id="sueldoEmp1" layoutX="211.0" layoutY="70.0" prefHeight="19.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="66.0" text="Sueldo basico">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="153.0" prefHeight="32.0" prefWidth="147.0" text="Bonificaciones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bonifiEmp1" layoutX="210.0" layoutY="157.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="543.0" layoutY="67.0" text="Comisiones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="comisioEmp1" layoutX="717.0" layoutY="71.0" prefHeight="24.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="230.0" text="Horas extra">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="291.0" text="Extra diurna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurEmp1" layoutX="211.0" layoutY="289.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="44.0" layoutY="372.0" text="Extra nocturna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctuEmp1" layoutX="210.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" />
+                                          <Label layoutX="327.0" layoutY="291.0" text="Festivo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="327.0" layoutY="372.0" text="Extra diurna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurFesEmp1" layoutX="488.0" layoutY="369.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="599.0" layoutY="291.0" text="Extra nocturna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctFesEmp1" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <RadioButton fx:id="festDiaEmp1" layoutX="428.0" layoutY="300.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Descuentos y Deducciones">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="130.0" text="Salud">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="217.0" text="Prestamo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="130.0" text="Pensión">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="prestamoEmp1" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="700.0" layoutY="131.0" text="Embargo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="217.0" text="Fondo de empleados">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="saludEmp1" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp1" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp1" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp1" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Empleado 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="275.0" prefWidth="724.0">
+                     <children>
+                        <TabPane layoutX="1.0" layoutY="1.0" prefHeight="497.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Devengados">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="1039.0">
+                                       <children>
+                                          <TextField fx:id="sueldoEmp2" layoutX="211.0" layoutY="70.0" prefHeight="19.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="66.0" text="Sueldo basico">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="153.0" prefHeight="32.0" prefWidth="147.0" text="Bonificaciones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bonifiEmp2" layoutX="210.0" layoutY="157.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="543.0" layoutY="67.0" text="Comisiones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="comisioEmp2" layoutX="717.0" layoutY="71.0" prefHeight="24.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="230.0" text="Horas extra">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="291.0" text="Extra diurna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurEmp2" layoutX="211.0" layoutY="289.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="44.0" layoutY="372.0" text="Extra nocturna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctuEmp2" layoutX="210.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" />
+                                          <Label layoutX="327.0" layoutY="291.0" text="Festivo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="327.0" layoutY="372.0" text="Extra diurna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurFesEmp2" layoutX="488.0" layoutY="369.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="599.0" layoutY="291.0" text="Extra nocturna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctFesEmp2" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <RadioButton fx:id="festDiaEmp2" layoutX="428.0" layoutY="300.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Descuentos y Deducciones">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="130.0" text="Salud">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="217.0" text="Prestamo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="130.0" text="Pensión">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="prestamoEmp2" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="700.0" layoutY="131.0" text="Embargo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="217.0" text="Fondo de empleados">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="saludEmp2" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp2" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp2" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp2" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Empleado 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="275.0" prefWidth="724.0">
+                     <children>
+                        <TabPane layoutX="1.0" layoutY="1.0" prefHeight="497.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Devengados">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="1039.0">
+                                       <children>
+                                          <TextField fx:id="sueldoEmp3" layoutX="211.0" layoutY="70.0" prefHeight="19.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="66.0" text="Sueldo basico">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="153.0" prefHeight="32.0" prefWidth="147.0" text="Bonificaciones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bonifiEmp3" layoutX="210.0" layoutY="157.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="543.0" layoutY="67.0" text="Comisiones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="comisioEmp3" layoutX="717.0" layoutY="71.0" prefHeight="24.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="230.0" text="Horas extra">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="291.0" text="Extra diurna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurEmp3" layoutX="211.0" layoutY="289.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="44.0" layoutY="372.0" text="Extra nocturna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctuEmp3" layoutX="210.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" />
+                                          <Label layoutX="327.0" layoutY="291.0" text="Festivo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="327.0" layoutY="372.0" text="Extra diurna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurFesEmp3" layoutX="488.0" layoutY="369.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="599.0" layoutY="291.0" text="Extra nocturna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctFesEmp3" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <RadioButton fx:id="festDiaEmp3" layoutX="428.0" layoutY="300.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Descuentos y Deducciones">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="130.0" text="Salud">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="217.0" text="Prestamo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="130.0" text="Pensión">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="prestamoEmp3" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="700.0" layoutY="131.0" text="Embargo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="217.0" text="Fondo de empleados">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="saludEmp3" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp3" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp3" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp3" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Empleado 4">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="275.0" prefWidth="724.0">
+                     <children>
+                        <TabPane layoutX="1.0" layoutY="1.0" prefHeight="497.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Devengados">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="1039.0">
+                                       <children>
+                                          <TextField fx:id="sueldoEmp4" layoutX="211.0" layoutY="70.0" prefHeight="19.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="66.0" text="Sueldo basico">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="153.0" prefHeight="32.0" prefWidth="147.0" text="Bonificaciones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bonifiEmp4" layoutX="210.0" layoutY="157.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="543.0" layoutY="67.0" text="Comisiones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="comisioEmp4" layoutX="717.0" layoutY="71.0" prefHeight="24.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="230.0" text="Horas extra">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="291.0" text="Extra diurna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurEmp4" layoutX="211.0" layoutY="289.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="44.0" layoutY="372.0" text="Extra nocturna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctuEmp4" layoutX="210.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" />
+                                          <Label layoutX="327.0" layoutY="291.0" text="Festivo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="327.0" layoutY="372.0" text="Extra diurna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurFesEmp4" layoutX="488.0" layoutY="369.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="599.0" layoutY="291.0" text="Extra nocturna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctFesEmp4" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <RadioButton fx:id="festDiaEmp4" layoutX="428.0" layoutY="300.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Descuentos y Deducciones">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="130.0" text="Salud">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="217.0" text="Prestamo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="130.0" text="Pensión">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="prestamoEmp4" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="700.0" layoutY="131.0" text="Embargo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="217.0" text="Fondo de empleados">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="saludEmp4" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp4" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp4" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp4" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Empleado 5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="275.0" prefWidth="724.0">
+                     <children>
+                        <TabPane layoutX="1.0" layoutY="1.0" prefHeight="497.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Devengados">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="1039.0">
+                                       <children>
+                                          <TextField fx:id="sueldoEmp5" layoutX="211.0" layoutY="70.0" prefHeight="19.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="66.0" text="Sueldo basico">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="153.0" prefHeight="32.0" prefWidth="147.0" text="Bonificaciones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="bonifiEmp5" layoutX="210.0" layoutY="157.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="543.0" layoutY="67.0" text="Comisiones">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="comisioEmp5" layoutX="717.0" layoutY="71.0" prefHeight="24.0" prefWidth="184.0" />
+                                          <Label layoutX="44.0" layoutY="230.0" text="Horas extra">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="291.0" text="Extra diurna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurEmp5" layoutX="211.0" layoutY="289.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="44.0" layoutY="372.0" text="Extra nocturna">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctuEmp5" layoutX="210.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" />
+                                          <Label layoutX="327.0" layoutY="291.0" text="Festivo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="327.0" layoutY="372.0" text="Extra diurna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exDiurFesEmp5" layoutX="488.0" layoutY="369.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <Label layoutX="599.0" layoutY="291.0" text="Extra nocturna F.">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="exNoctFesEmp5" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
+                                          <RadioButton fx:id="festDiaEmp5" layoutX="428.0" layoutY="300.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Descuentos y Deducciones">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="130.0" text="Salud">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="217.0" text="Prestamo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="130.0" text="Pensión">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="prestamoEmp13" layoutX="211.0" layoutY="221.0" prefHeight="18.0" prefWidth="187.0" />
+                                          <Label layoutX="700.0" layoutY="131.0" text="Embargo">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="425.0" layoutY="217.0" text="Fondo de empleados">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="saludEmp13" layoutX="224.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="pensionEmp13" layoutX="592.0" layoutY="139.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="embargoEmp13" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" />
+                                          <RadioButton fx:id="fondoEmp13" layoutX="692.0" layoutY="225.0" mnemonicParsing="false" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="404.0" text="Nómina">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
