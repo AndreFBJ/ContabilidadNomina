@@ -16,17 +16,36 @@ public class App
     	Empleado empleado4 = new Empleado();
     	Empleado empleado5 = new Empleado();
     	
+    	DevengadosAdiciones devengados = new DevengadosAdiciones();
+    	
     	empleado1.setNombre("empleado 1");
     	empleado2.setNombre("empleado 2");
     	empleado3.setNombre("empleado 3");
     	empleado4.setNombre("empleado 4");
     	empleado5.setNombre("empleado 5");
     	
-    	empleado1.setSueldoBasico(500);
+    	empleado1.setSueldoBasico(500); // AQUI SE PONE EL GET-TEXT QUE HAGA EN EL DISEÑO
     	empleado2.setSueldoBasico(500);
     	empleado3.setSueldoBasico(500);
     	empleado4.setSueldoBasico(100);
     	empleado5.setSueldoBasico(100);
+    	
+    	DevengadosAdiciones auxilioTransporte = new DevengadosAdiciones();
+    	
+    	//AUXILIO DE TRANSPORTE EMPLEADO 1
+    	int auxEmpleado1= devengados.AuxTrans(empleado1, auxilioTransporte);
+    	
+    	//AUXILIO DE TRANSPORTE EMPLEADO 2
+    	int auxEmpleado2= devengados.AuxTrans(empleado2, auxilioTransporte);
+    	
+    	//AUXILIO DE TRNASPORTE EMPLEADO 3
+    	int auxEmpleado3= devengados.AuxTrans(empleado3, auxilioTransporte);
+    	
+    	//AUXILIO DE TRNASPORTE EMPLEADO 4
+    	int auxEmpleado4= devengados.AuxTrans(empleado4, auxilioTransporte);
+    	
+    	//AUXILIO DE TRANSPORTE EMPLEADO 5
+    	int auxEmpleado5= devengados.AuxTrans(empleado5, auxilioTransporte);
     	
     	
     }

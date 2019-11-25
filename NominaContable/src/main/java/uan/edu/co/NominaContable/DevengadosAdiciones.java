@@ -60,5 +60,18 @@ public class DevengadosAdiciones {
 	}
 	
 	
+	//FUNCION PARA CALCULAR SI APLICA O NO EL AUXILIO DE TRNASPORTE
+	public int AuxTrans(Empleado empleado, DevengadosAdiciones auxTransporte) {
+		if(empleado.getSueldoBasico() < 1656232)
+    	{
+    		auxTransporte.setAuxTransporte(empleado.getSueldoBasico()+97032);
+    	}
+    	else if(empleado.getSueldoBasico() > 1656232)
+    	{
+    		auxTransporte.setAuxTransporte(empleado.getSueldoBasico()+0);
+    	}
+		
+		return auxTransporte.getAuxTransporte();
+	}
 
 }
