@@ -33,19 +33,19 @@ public class App
     	DevengadosAdiciones auxilioTransporte = new DevengadosAdiciones();
     	
     	//AUXILIO DE TRANSPORTE EMPLEADO 1
-    	int auxEmpleado1= devengados.AuxTrans(empleado1, auxilioTransporte);
+    	int auxEmpleado1= devengados.auxTrans(empleado1, auxilioTransporte);
     	
     	//AUXILIO DE TRANSPORTE EMPLEADO 2
-    	int auxEmpleado2= devengados.AuxTrans(empleado2, auxilioTransporte);
+    	int auxEmpleado2= devengados.auxTrans(empleado2, auxilioTransporte);
     	
     	//AUXILIO DE TRNASPORTE EMPLEADO 3
-    	int auxEmpleado3= devengados.AuxTrans(empleado3, auxilioTransporte);
+    	int auxEmpleado3= devengados.auxTrans(empleado3, auxilioTransporte);
     	
     	//AUXILIO DE TRNASPORTE EMPLEADO 4
-    	int auxEmpleado4= devengados.AuxTrans(empleado4, auxilioTransporte);
+    	int auxEmpleado4= devengados.auxTrans(empleado4, auxilioTransporte);
     	
     	//AUXILIO DE TRANSPORTE EMPLEADO 5
-    	int auxEmpleado5= devengados.AuxTrans(empleado5, auxilioTransporte);
+    	int auxEmpleado5= devengados.auxTrans(empleado5, auxilioTransporte);
     	
     	
     }
