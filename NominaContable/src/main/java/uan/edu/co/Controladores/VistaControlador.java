@@ -13,6 +13,7 @@ public class VistaControlador {
 	
 	Empleado empleado1 = new Empleado();
 	DevengadosAdiciones devengado1 = new DevengadosAdiciones();
+	DescuentosYDeducciones descuentos1 = new DescuentosYDeducciones();
 	
 	Empleado empleado2 = new Empleado();
 	DevengadosAdiciones devengado2 = new DevengadosAdiciones();
@@ -249,6 +250,10 @@ public class VistaControlador {
     	double extrasFestivoNocturnos1 = Double.parseDouble(exNoctFesEmp1.getText());
     	devengado1.setExtraFestivoDiurna(extrasFestivoNocturnos1);
     	devengado1.horaExtraFestivoNocturno(empleado1, devengado1);
+    	
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO1
+    	int totalPrestamo = Integer.parseInt(prestamoEmp1.getText());
+    	descuentos1.setPrestamos(totalPrestamo);
     	
     	//Para empleado 2
     	empleado2.setNombre("empleado 2");
