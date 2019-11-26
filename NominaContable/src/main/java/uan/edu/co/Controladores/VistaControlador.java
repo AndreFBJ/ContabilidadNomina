@@ -11,21 +11,30 @@ import javafx.scene.control.TextField;
 
 public class VistaControlador {
 	
+	//Empleado 1
 	Empleado empleado1 = new Empleado();
 	DevengadosAdiciones devengado1 = new DevengadosAdiciones();
 	DescuentosYDeducciones descuentos1 = new DescuentosYDeducciones();
 	
+	//Empleado 2
 	Empleado empleado2 = new Empleado();
 	DevengadosAdiciones devengado2 = new DevengadosAdiciones();
+	DescuentosYDeducciones descuentos2 = new DescuentosYDeducciones();
 	
+	//Empleado 3
 	Empleado empleado3 = new Empleado();
 	DevengadosAdiciones devengado3 = new DevengadosAdiciones();
+	DescuentosYDeducciones descuentos3 = new DescuentosYDeducciones();
 	
+	//Empleado 4
 	Empleado empleado4 = new Empleado();
 	DevengadosAdiciones devengado4 = new DevengadosAdiciones();
+	DescuentosYDeducciones descuentos4 = new DescuentosYDeducciones();
 	
+	//Empleado 5
 	Empleado empleado5 = new Empleado();
 	DevengadosAdiciones devengado5 = new DevengadosAdiciones();
+	DescuentosYDeducciones descuentos5 = new DescuentosYDeducciones();
 
 	@FXML
     private TextField sueldoEmp1;
@@ -251,9 +260,9 @@ public class VistaControlador {
     	devengado1.setExtraFestivoDiurna(extrasFestivoNocturnos1);
     	devengado1.horaExtraFestivoNocturno(empleado1, devengado1);
     	
-    	//DESCUENTOS Y DEDUCCIONES EMPLEADO1
-    	int totalPrestamo = Integer.parseInt(prestamoEmp1.getText());
-    	descuentos1.setPrestamos(totalPrestamo);
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO 1
+    	int totalPrestamo1 = Integer.parseInt(prestamoEmp1.getText());
+    	descuentos1.setPrestamos(totalPrestamo1);
     	
     	//Para empleado 2
     	empleado2.setNombre("empleado 2");
@@ -278,6 +287,10 @@ public class VistaControlador {
     	devengado2.setExtraFestivoDiurna(extrasFestivoNocturnos2);
     	devengado2.horaExtraFestivoNocturno(empleado2, devengado2);
     	
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO 2
+    	int totalPrestamo2 = Integer.parseInt(prestamoEmp2.getText());
+    	descuentos2.setPrestamos(totalPrestamo2);
+    	
     	//Para empleado 3
     	empleado3.setNombre("empleado 3");
     	int sueldo3=Integer.parseInt(sueldoEmp3.getText());
@@ -300,6 +313,10 @@ public class VistaControlador {
     	double extrasFestivoNocturnos3 = Double.parseDouble(exNoctFesEmp3.getText());
     	devengado3.setExtraFestivoDiurna(extrasFestivoNocturnos3);
     	devengado3.horaExtraFestivoNocturno(empleado3, devengado3);
+    	
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO 3
+    	int totalPrestamo3 = Integer.parseInt(prestamoEmp3.getText());
+    	descuentos3.setPrestamos(totalPrestamo3);
     	
     	//Para empleado 4
     	empleado4.setNombre("empleado 4");
@@ -324,6 +341,10 @@ public class VistaControlador {
     	devengado4.setExtraFestivoDiurna(extrasFestivoNocturnos4);
     	devengado4.horaExtraFestivoNocturno(empleado4, devengado4);
     	
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO 4
+    	int totalPrestamo4 = Integer.parseInt(prestamoEmp4.getText());
+    	descuentos4.setPrestamos(totalPrestamo4);
+    	
     	//Para empleado 5
     	empleado5.setNombre("empleado 5");
     	int sueldo5=Integer.parseInt(sueldoEmp5.getText());
@@ -346,6 +367,10 @@ public class VistaControlador {
     	double extrasFestivoNocturnos5 = Double.parseDouble(exNoctFesEmp5.getText());
     	devengado5.setExtraFestivoDiurna(extrasFestivoNocturnos5);
     	devengado5.horaExtraFestivoNocturno(empleado5, devengado5);
+    	
+    	//DESCUENTOS Y DEDUCCIONES EMPLEADO 5
+    	int totalPrestamo5 = Integer.parseInt(prestamoEmp5.getText());
+    	descuentos5.setPrestamos(totalPrestamo5);
     	
     }
 
