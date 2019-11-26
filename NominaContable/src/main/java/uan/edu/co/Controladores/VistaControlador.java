@@ -219,6 +219,22 @@ public class VistaControlador {
     	empleado1.setSueldoBasico(sueldo);
     	
     	devengado1.auxTrans(empleado1, devengado1);
+    	
+    	double extrasDiurna = Double.parseDouble(exDiurEmp1.getText());
+    	devengado1.setExtraDiurna(extrasDiurna);
+    	devengado1.horaExtraDiurna(empleado1, devengado1);
+    	
+    	double extrasNocturna = Double.parseDouble(exNoctuEmp1.getText());
+    	devengado1.setExtraNocturna(extrasNocturna);
+    	devengado1.horaExtraNocturna(empleado1, devengado1);
+    	
+    	double extrasFestivoDiurnos = Double.parseDouble(exDiurFesEmp1.getText());
+    	devengado1.setExtraFestivoDiurna(extrasFestivoDiurnos);
+    	devengado1.horaExtraFestivoDiurno(empleado1, devengado1);
+    	
+    	double extrasFestivoNocturnos = Double.parseDouble(exNoctFesEmp1.getText());
+    	devengado1.setExtraFestivoDiurna(extrasFestivoNocturnos);
+    	devengado1.horaExtraFestivoNocturno(empleado1, devengado1);
     }
 
 }

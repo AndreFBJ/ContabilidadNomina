@@ -3,11 +3,11 @@ package uan.edu.co.NominaContable;
 public class DevengadosAdiciones {
 	
 	private int auxTransporte;
-	private int extraDiurna;
-	private int extraNocturna;
+	private double extraDiurna;
+	private double extraNocturna;
 	private int extraFestivoCompleto;
-	private int extraFestivoDiurna;
-	private int extraFestivoNocturna;
+	private double extraFestivoDiurna;
+	private double extraFestivoNocturna;
 	private int bonificaciones;
 	private int comisiones;
 	
@@ -17,16 +17,16 @@ public class DevengadosAdiciones {
 	public void setAuxTransporte(int auxTransporte) {
 		this.auxTransporte = auxTransporte;
 	}
-	public int getExtraDiurna() {
+	public double getExtraDiurna() {
 		return extraDiurna;
 	}
-	public void setExtraDiurna(int extraDiurna) {
+	public void setExtraDiurna(double extraDiurna) {
 		this.extraDiurna = extraDiurna;
 	}
-	public int getExtraNocturna() {
+	public double getExtraNocturna() {
 		return extraNocturna;
 	}
-	public void setExtraNocturna(int extraNocturna) {
+	public void setExtraNocturna(double extraNocturna) {
 		this.extraNocturna = extraNocturna;
 	}
 	public int getExtraFestivoCompleto() {
@@ -35,16 +35,16 @@ public class DevengadosAdiciones {
 	public void setExtraFestivoCompleto(int extraFestivoCompleto) {
 		this.extraFestivoCompleto = extraFestivoCompleto;
 	}
-	public int getExtraFestivoDiurna() {
+	public double getExtraFestivoDiurna() {
 		return extraFestivoDiurna;
 	}
-	public void setExtraFestivoDiurna(int extraFestivoDiurna) {
+	public void setExtraFestivoDiurna(double extraFestivoDiurna) {
 		this.extraFestivoDiurna = extraFestivoDiurna;
 	}
-	public int getExtraFestivoNocturna() {
+	public double getExtraFestivoNocturna() {
 		return extraFestivoNocturna;
 	}
-	public void setExtraFestivoNocturna(int extraFestivoNocturna) {
+	public void setExtraFestivoNocturna(double extraFestivoNocturna) {
 		extraFestivoNocturna = extraFestivoNocturna;
 	}
 	public int getBonificaciones() {
@@ -76,29 +76,38 @@ public class DevengadosAdiciones {
 	}
 	
 	//CALCULAR HORA EXTRA DIURNA
-	public int horaExtraDiurna(Empleado empleado, DevengadosAdiciones horaExtra) {
-		
-		horaExtra.setExtraDiurna(0);
+	public double horaExtraDiurna(Empleado empleado, DevengadosAdiciones horaExtra) {
 		
 		if(horaExtra.getExtraDiurna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
-			double valorDiurna = (valorHora*1.25)*extraDiurna ;	
+			double valorDiurna = (valorHora*1.25)*horaExtra.getExtraDiurna();
 			
-			
+			horaExtra.setExtraDiurna(valorDiurna);
+		}
+		else if(horaExtra.getExtraDiurna() == 0) {
+			horaExtra.setExtraDiurna(0);
 		}
 		return horaExtra.getExtraDiurna();
 	}
 	
-	public int horaExtraNocturna(Empleado empleado) {
-		 this.extraNocturna = 0;
+	//CALCULAR HORA EXTRA NOCTURNA
+	public double horaExtraNocturna(Empleado empleado, DevengadosAdiciones horaNocturna) {
 		 
-		 if(extraNocturna > 0) {
+		 if(horaNocturna.getExtraNocturna() > 0) {
 			 int valorHora = empleado.getSueldoBasico()/240;
-			 double valorNocturno = (valorHora*1.75)*extraNocturna;
+			 double valorNocturno = (valorHora*1.75)*horaNocturna.getExtraNocturna();
+			 
+			 horaNocturna.setExtraNocturna(valorNocturno);
 		 }
+		 else if(horaNocturna.getExtraNocturna() == 0) {
+			 horaNocturna.setExtraNocturna(0);
+		 }
+		 
+		 return horaNocturna.getExtraNocturna();
 	}
 	
-	public int horaExtraFestivoCompleto(Empleado empleado) {
+	//CALCULAR HORA EXTRA FESTIVO COMPLETO - falta
+	public int horaExtraFestivoCompleto(Empleado empleado, DevengadosAdiciones extraFestivo) {
 		this.extraFestivoCompleto = 0;
 		
 		if(extraFestivoCompleto > 0) {
@@ -109,21 +118,35 @@ public class DevengadosAdiciones {
 		return 
 	}
 	
-	public int horaExtraFestivoDiurno(Empleado empleado) {
-		this.extraFestivoDiurna = 0;
+	//CALCULAR HORA EXTRA FESTIVO DIURNO
+	public double horaExtraFestivoDiurno(Empleado empleado, DevengadosAdiciones extraFestivoDiurno) {
 		
-		if(extraFestivoDiurna > 0) {
+		if(extraFestivoDiurno.getExtraFestivoDiurna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
-			double valorFestiDiur = (valorHora*1.25)*extraFestivoDiurna;
+			double valorFestiDiur = (valorHora*1.25)*extraFestivoDiurno.getExtraFestivoDiurna();
+			
+			extraFestivoDiurno.setExtraFestivoDiurna(valorFestiDiur);
 		}
+		else if(extraFestivoDiurno.getExtraFestivoDiurna() == 0) {
+			extraFestivoDiurno.setExtraFestivoDiurna(0);
+		}
+		
+		return extraFestivoDiurno.getExtraFestivoDiurna();
 	}
 	
-	public int horaExtraFestivoNocturno(Empleado empleado) {
-		this.extraFestivoNocturna = 0;
+	//CALCULAR HORA EXTRA FESTIVA NOCTURNA
+	public double horaExtraFestivoNocturno(Empleado empleado, DevengadosAdiciones extraFestivoNoct) {
 		
-		if(extraFestivoNocturna > 0) {
+		if(extraFestivoNoct.getExtraFestivoNocturna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
-			double valorFestiNoctur = (valorHora*1.25)*extraFestivoNocturna;
+			double valorFestiNoctur = (valorHora*1.25)*extraFestivoNoct.getExtraFestivoNocturna();
+			
+			extraFestivoNoct.setExtraFestivoNocturna(valorFestiNoctur);
 		}
+		else if(extraFestivoNoct.getExtraFestivoNocturna() == 0) {
+			extraFestivoNoct.setExtraFestivoNocturna(0);
+		}
+		
+		return extraFestivoNoct.getExtraFestivoNocturna();
 	} 
 }
