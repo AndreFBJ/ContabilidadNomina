@@ -517,6 +517,36 @@ public class App //extends Application
     	double netoPagarEmp4 = totalDevengadoEmp4 - totalDescuentoDeducciEmp4;
     	double netoPagarEmp5 = totalDevengadoEmp5 - totalDescuentoDeducciEmp5;
     	double netoTotalPagar = netoPagarEmp1 + netoPagarEmp2 + netoPagarEmp3 + netoPagarEmp4 + netoPagarEmp5;
+    	
+    	System.out.println("El total de sueldos basicos es: $"+totalSueldosBasicos);
+    	System.out.println("El total de auxilios de transporte es: $"+totalAuxTranspor);
+    	System.out.println("Las horas totales extra a pagar son: $"+horasExtrasTotales);
+    	System.out.println("El total de bonificaciones totales son: $"+totalBonificaiones);
+    	System.out.println("El total de comisiones a pagar es: $"+totalComisiones);
+    	System.out.println("El total de salud a pagar es: $"+totalSalud);
+    	System.out.println("El total de las pensiones a pagar es: $"+totalPensiones);
+    	System.out.println("El total de prestamos a cobrar es: $"+totalPrestamos);
+    	System.out.println("El total de embargos de los empleados es de: $"+totalEmbargos);
+    	System.out.println("El monto a pagar por el fondo de empleados es $:"+totalFondoEmpleados);
+    	System.out.println("El monto total devengado por el empleado 1 es de: $"+totalDevengadoEmp1);
+    	System.out.println("El monto total devengado por el empleado 2 es de $"+totalDevengadoEmp2);
+    	System.out.println("El monto total devengado por el empleado 3 es de $"+totalDevengadoEmp3);
+    	System.out.println("El monto total devengado por el empleado 4 es de $"+totalDevengadoEmp4);
+    	System.out.println("El monto total devengado por el empleado 5 es de $"+totalDevengadoEmp5);
+    	System.out.println("El total a pagar Devengado es: $"+totalDevengadosTodos);
+    	System.out.println("Los descuentos y deducciones del empleado 1 suman un total de: $"+totalDescuentoDeducciEmp1);
+    	System.out.println("Los descuentos y deducciones del empleado 2 suman un total de: $"+totalDescuentoDeducciEmp2);
+    	System.out.println("Los descuentos y deducciones del empleado 3 suman un total de: $"+totalDescuentoDeducciEmp3);
+    	System.out.println("Los descuentos y deducciones del empleado 4 suman un total de: $"+totalDescuentoDeducciEmp4);
+    	System.out.println("Los descuentos y deducciones del empleado 5 suman un total de: $"+totalDescuentoDeducciEmp5);
+    	System.out.println("El total por descuentos  deducciones de todos los empleados es: $"+TotalDescuentosYDeducciones);
+    	System.out.println("El valor neto a pagar del empleado 1 es: $"+netoPagarEmp1);
+    	System.out.println("El valor neto a pagar del empleado 2 es: $"+netoPagarEmp2);
+    	System.out.println("El valor neto a pagar del empleado 3 es: $"+netoPagarEmp3);
+    	System.out.println("El valor neto a pagar del empleado 4 es: $"+netoPagarEmp4);
+    	System.out.println("El valor neto a pagar del empleado 5 es: $"+netoPagarEmp5);
+    	System.out.println("El valor neto a pagar de todos los empleados es: $"+netoTotalPagar);
+    		
     }
     
     /*
