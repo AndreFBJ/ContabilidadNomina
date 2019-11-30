@@ -123,7 +123,7 @@ public class DevengadosAdiciones {
 		
 		if(extraFestivoDiurno.getExtraFestivoDiurna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
-			double valorFestiDiur = (valorHora*1.25)*extraFestivoDiurno.getExtraFestivoDiurna();
+			double valorFestiDiur = (valorHora*2)*extraFestivoDiurno.getExtraFestivoDiurna();
 			
 			extraFestivoDiurno.setExtraFestivoDiurna(valorFestiDiur);
 		}
@@ -139,7 +139,7 @@ public class DevengadosAdiciones {
 		
 		if(extraFestivoNoct.getExtraFestivoNocturna() > 0) {
 			int valorHora = empleado.getSueldoBasico()/240;
-			double valorFestiNoctur = (valorHora*1.25)*extraFestivoNoct.getExtraFestivoNocturna();
+			double valorFestiNoctur = (valorHora*2.5)*extraFestivoNoct.getExtraFestivoNocturna();
 			
 			extraFestivoNoct.setExtraFestivoNocturna(valorFestiNoctur);
 		}
