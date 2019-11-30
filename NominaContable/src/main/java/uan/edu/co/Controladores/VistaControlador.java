@@ -58,22 +58,37 @@ public class VistaControlador {
     private TextField exNoctFesEmp1;
 
     @FXML
-    private RadioButton festDiaEmp1;
+    private RadioButton festDiaEmp1Si;
+
+    @FXML
+    private RadioButton festDiaEmp1No;
 
     @FXML
     private TextField prestamoEmp1;
 
     @FXML
-    private RadioButton saludEmp1;
+    private RadioButton saludEmp1Si;
 
     @FXML
-    private RadioButton pensionEmp1;
+    private RadioButton saludEmp1No;
 
     @FXML
-    private RadioButton embargoEmp1;
+    private RadioButton pensionEmp1Si;
 
     @FXML
-    private RadioButton fondoEmp1;
+    private RadioButton pensionEmp1No;
+
+    @FXML
+    private RadioButton embargoEmp1Si;
+
+    @FXML
+    private RadioButton embargoEmp1No;
+
+    @FXML
+    private RadioButton fondoEmp1Si;
+
+    @FXML
+    private RadioButton fondoEmp1No;
 
     @FXML
     private TextField sueldoEmp2;
@@ -97,22 +112,37 @@ public class VistaControlador {
     private TextField exNoctFesEmp2;
 
     @FXML
-    private RadioButton festDiaEmp2;
+    private RadioButton festDiaEmp2Si;
+
+    @FXML
+    private RadioButton festDiaEmp2No;
 
     @FXML
     private TextField prestamoEmp2;
 
     @FXML
-    private RadioButton saludEmp2;
+    private RadioButton saludEmp2Si;
 
     @FXML
-    private RadioButton pensionEmp2;
+    private RadioButton saludEmp2No;
 
     @FXML
-    private RadioButton embargoEmp2;
+    private RadioButton pensionEmp2Si;
 
     @FXML
-    private RadioButton fondoEmp2;
+    private RadioButton pensionEmp2No;
+
+    @FXML
+    private RadioButton embargoEmp2Si;
+
+    @FXML
+    private RadioButton embargoEmp2No;
+
+    @FXML
+    private RadioButton fondoEmp2Si;
+
+    @FXML
+    private RadioButton fondoEmp2No;
 
     @FXML
     private TextField sueldoEmp3;
@@ -136,22 +166,37 @@ public class VistaControlador {
     private TextField exNoctFesEmp3;
 
     @FXML
-    private RadioButton festDiaEmp3;
+    private RadioButton festDiaEmp3Si;
+
+    @FXML
+    private RadioButton festDiaEmp3No;
 
     @FXML
     private TextField prestamoEmp3;
 
     @FXML
-    private RadioButton saludEmp3;
+    private RadioButton saludEmp3Si;
 
     @FXML
-    private RadioButton pensionEmp3;
+    private RadioButton saludEmp3No;
 
     @FXML
-    private RadioButton embargoEmp3;
+    private RadioButton pensionEmp3Si;
 
     @FXML
-    private RadioButton fondoEmp3;
+    private RadioButton pensionEmp3No;
+
+    @FXML
+    private RadioButton embargoEmp3Si;
+
+    @FXML
+    private RadioButton embargoEmp3No;
+
+    @FXML
+    private RadioButton fondoEmp3Si;
+
+    @FXML
+    private RadioButton fondoEmp3No;
 
     @FXML
     private TextField sueldoEmp4;
@@ -175,22 +220,37 @@ public class VistaControlador {
     private TextField exNoctFesEmp4;
 
     @FXML
-    private RadioButton festDiaEmp4;
+    private RadioButton festDiaEmp4Si;
+
+    @FXML
+    private RadioButton festDiaEmp4No;
 
     @FXML
     private TextField prestamoEmp4;
 
     @FXML
-    private RadioButton saludEmp4;
+    private RadioButton saludEmp4Si;
 
     @FXML
-    private RadioButton pensionEmp4;
+    private RadioButton saludEmp4No;
 
     @FXML
-    private RadioButton embargoEmp4;
+    private RadioButton pensionEmp4Si;
 
     @FXML
-    private RadioButton fondoEmp4;
+    private RadioButton pensionEmp4No;
+
+    @FXML
+    private RadioButton embargoEmp4Si;
+
+    @FXML
+    private RadioButton embargoEmp4No;
+
+    @FXML
+    private RadioButton fondoEmp4Si;
+
+    @FXML
+    private RadioButton fondoEmp4No;
 
     @FXML
     private TextField sueldoEmp5;
@@ -214,22 +274,37 @@ public class VistaControlador {
     private TextField exNoctFesEmp5;
 
     @FXML
-    private RadioButton festDiaEmp5;
+    private RadioButton festDiaEmp5Si;
+
+    @FXML
+    private RadioButton festDiaEmp5No;
 
     @FXML
     private TextField prestamoEmp5;
 
     @FXML
-    private RadioButton saludEmp5;
+    private RadioButton saludEmp5Si;
 
     @FXML
-    private RadioButton pensionEmp5;
+    private RadioButton saludEmp5No;
 
     @FXML
-    private RadioButton embargoEmp5;
+    private RadioButton pensionEmp5Si;
 
     @FXML
-    private RadioButton fondoEmp5;
+    private RadioButton pensionEmp5No;
+
+    @FXML
+    private RadioButton embargoEmp5Si;
+
+    @FXML
+    private RadioButton embargoEmp5No;
+
+    @FXML
+    private RadioButton fondoEmp5Si;
+
+    @FXML
+    private RadioButton fondoEmp5No;
 
     @FXML
     private Button generarNominaTotal;
