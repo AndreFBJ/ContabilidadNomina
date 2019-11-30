@@ -498,6 +498,25 @@ public class App //extends Application
     	
     	
     	double totalDevengadoEmp1 = sueldo1 + auxTransporte1 + horasEmp1 + bonificaEmp1 + comisionEmp1;
+    	double totalDevengadoEmp2 = sueldo2 + auxTransporte2 + horasEmp2 + bonificaEmp2 + comisionEmp2;
+    	double totalDevengadoEmp3 = sueldo3 + auxTransporte3 + horasEmp3 + bonificaEmp3 + comisionEmp3;
+    	double totalDevengadoEmp4 = sueldo4 + auxTransporte4 + horasEmp4 + bonificaEmp4 + comisionEmp4;
+    	double totalDevengadoEmp5 = sueldo5 + auxTransporte5 + horasEmp5 + bonificaEmp5 + comisionEmp5;
+    	double totalDevengadosTodos = totalDevengadoEmp1 + totalDevengadoEmp2 + totalDevengadoEmp3 + totalDevengadoEmp4 + totalDevengadoEmp5;
+    	
+    	double totalDescuentoDeducciEmp1 = saludEmp1 + pensionEmp1 + prestamo1 + embargoEmp1 + fondoEmpleadosEmp1;
+    	double totalDescuentoDeducciEmp2 = saludEmp2 + pensionEmp2 + prestamo2 + embargoEmp2 + fondoEmpleadosEmp2;
+    	double totalDescuentoDeducciEmp3 = saludEmp3 + pensionEmp3 + prestamo3 + embargoEmp3 + fondoEmpleadosEmp3;
+    	double totalDescuentoDeducciEmp4 = saludEmp4 + pensionEmp4 + prestamo4 + embargoEmp4 + fondoEmpleadosEmp4;
+    	double totalDescuentoDeducciEmp5 = saludEmp5 + pensionEmp5 + prestamo5 + embargoEmp5 + fondoEmpleadosEmp5;
+    	double TotalDescuentosYDeducciones = totalDescuentoDeducciEmp1 + totalDescuentoDeducciEmp2 + totalDescuentoDeducciEmp3 + totalDescuentoDeducciEmp4 + totalDescuentoDeducciEmp5;
+    	
+    	double netoPagarEmp1 = totalDevengadoEmp1 - totalDescuentoDeducciEmp1;
+    	double netoPagarEmp2 = totalDevengadoEmp2 - totalDescuentoDeducciEmp2;
+    	double netoPagarEmp3 = totalDevengadoEmp3 - totalDescuentoDeducciEmp3;
+    	double netoPagarEmp4 = totalDevengadoEmp4 - totalDescuentoDeducciEmp4;
+    	double netoPagarEmp5 = totalDevengadoEmp5 - totalDescuentoDeducciEmp5;
+    	double netoTotalPagar = netoPagarEmp1 + netoPagarEmp2 + netoPagarEmp3 + netoPagarEmp4 + netoPagarEmp5;
     }
     
     /*
