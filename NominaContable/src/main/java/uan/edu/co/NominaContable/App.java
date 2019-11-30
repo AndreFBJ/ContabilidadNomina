@@ -166,7 +166,7 @@ public class App //extends Application
     	devengado2.horaExtraNocturna(empleado2, devengado2);
     	double extraNoturEmp2 = devengado2.getExtraNocturna();
     	
-    	System.out.println("Si empleado 2 trabajo dia festivo, digite 8, si no, digite 0");
+    	System.out.println("Si empleado 2 trabajo dia festivo, digite 1, si no, digite 2");
     	int festivoCompleto2 = scan.nextInt();
     	devengado2.setExtraFestivoCompleto(festivoCompleto2);
     	devengado2.horaExtraFestivoCompleto(empleado2, devengado2);
@@ -252,7 +252,7 @@ public class App //extends Application
     	devengado3.horaExtraNocturna(empleado3, devengado3);
     	double extraNoturEmp3 = devengado3.getExtraNocturna();
     	
-    	System.out.println("Si empleado 3 trabajo dia festivo, digite 8, si no, digite 0");
+    	System.out.println("Si empleado 3 trabajo dia festivo, digite 1, si no, digite 2");
     	int festivoCompleto3 = scan.nextInt();
     	devengado3.setExtraFestivoCompleto(festivoCompleto3);
     	devengado3.horaExtraFestivoCompleto(empleado3, devengado3);
@@ -339,7 +339,7 @@ public class App //extends Application
     	devengado4.horaExtraNocturna(empleado4, devengado4);
     	double extraNoturEmp4 = devengado4.getExtraNocturna();
     	
-    	System.out.println("Si empleado 4 trabajo dia festivo, digite 8, si no, digite 0");
+    	System.out.println("Si empleado 4 trabajo dia festivo, digite 1, si no, digite 2");
     	int festivoCompleto4 = scan.nextInt();
     	devengado4.setExtraFestivoCompleto(festivoCompleto4);
     	devengado4.horaExtraFestivoCompleto(empleado4, devengado4);
@@ -425,7 +425,7 @@ public class App //extends Application
     	devengado5.horaExtraNocturna(empleado5, devengado5);
     	double extraNoturEmp5 = devengado5.getExtraNocturna();
     	
-    	System.out.println("Si empleado 5 trabajo dia festivo, digite 8, si no, digite 0");
+    	System.out.println("Si empleado 5 trabajo dia festivo, digite 1, si no, digite 2");
     	int festivoCompleto5 = scan.nextInt();
     	devengado5.setExtraFestivoCompleto(festivoCompleto5);
     	devengado5.horaExtraFestivoCompleto(empleado5, devengado5);
