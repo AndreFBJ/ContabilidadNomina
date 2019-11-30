@@ -5,7 +5,7 @@ public class DevengadosAdiciones {
 	private int auxTransporte;
 	private double extraDiurna;
 	private double extraNocturna;
-	private int extraFestivoCompleto;
+	private double extraFestivoCompleto;
 	private double extraFestivoDiurna;
 	private double extraFestivoNocturna;
 	private int bonificaciones;
@@ -29,11 +29,11 @@ public class DevengadosAdiciones {
 	public void setExtraNocturna(double extraNocturna) {
 		this.extraNocturna = extraNocturna;
 	}
-	public int getExtraFestivoCompleto() {
+	public double getExtraFestivoCompleto() {
 		return extraFestivoCompleto;
 	}
-	public void setExtraFestivoCompleto(int extraFestivoCompleto) {
-		this.extraFestivoCompleto = extraFestivoCompleto;
+	public void setExtraFestivoCompleto(double valorFestiComple) {
+		this.extraFestivoCompleto = valorFestiComple;
 	}
 	public double getExtraFestivoDiurna() {
 		return extraFestivoDiurna;
@@ -45,7 +45,7 @@ public class DevengadosAdiciones {
 		return extraFestivoNocturna;
 	}
 	public void setExtraFestivoNocturna(double extraFestivoNocturna) {
-		extraFestivoNocturna = extraFestivoNocturna;
+		this.extraFestivoNocturna = extraFestivoNocturna;
 	}
 	public int getBonificaciones() {
 		return bonificaciones;
@@ -107,15 +107,22 @@ public class DevengadosAdiciones {
 	}
 	
 	//CALCULAR HORA EXTRA FESTIVO COMPLETO - falta
-	public int horaExtraFestivoCompleto(Empleado empleado, DevengadosAdiciones extraFestivo) {
-		this.extraFestivoCompleto = 0;
+	public double horaExtraFestivoCompleto(Empleado empleado, DevengadosAdiciones extraFestivo) {
 		
-		if(extraFestivoCompleto > 0) {
+		
+		if(extraFestivo.getExtraFestivoCompleto() == 1) {
 			int valorHora = empleado.getSueldoBasico()/240;
 			double valorFestiComple = (valorHora*1.75)*8;
+			
+			extraFestivo.setExtraFestivoCompleto(valorFestiComple);
+		}
+		else if(extraFestivo.getExtraFestivoCompleto() == 2) {
+				extraFestivo.setExtraFestivoCompleto(0);
+				
+				extraFestivo.setExtraFestivoCompleto(0);
 		}
 		
-		return 
+		return  extraFestivo.getExtraFestivoCompleto();
 	}
 	
 	//CALCULAR HORA EXTRA FESTIVO DIURNO
