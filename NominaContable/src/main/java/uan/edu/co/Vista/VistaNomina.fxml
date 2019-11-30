@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -76,10 +77,18 @@
                                              </font>
                                           </Label>
                                           <TextField fx:id="exNoctFesEmp1" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
-                                          <Group layoutX="428.0" layoutY="300.0">
+                                          <Group layoutX="428.0" layoutY="299.0">
                                              <children>
-                                                <RadioButton fx:id="festDiaEmp1Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="festDiaEmp1No" layoutX="60.0" layoutY="-1.0" mnemonicParsing="false" text="No" />
+                                                <Group>
+                                                   <children>
+                                                      <RadioButton fx:id="festDiaEmp1Si" mnemonicParsing="false" text="Si">
+                                                         <toggleGroup>
+                                                            <ToggleGroup fx:id="festDiaEmp1Group" />
+                                                         </toggleGroup>
+                                                      </RadioButton>
+                                                      <RadioButton fx:id="festDiaEmp1No" layoutX="60.0" layoutY="-1.0" mnemonicParsing="false" text="No" toggleGroup="$festDiaEmp1Group" />
+                                                   </children>
+                                                </Group>
                                              </children>
                                           </Group>
                                        </children>
@@ -118,26 +127,38 @@
                                           </Label>
                                           <Group layoutX="224.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="saludEmp1Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="saludEmp1No" layoutX="54.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="saludEmp1Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="saludEmp1Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="saludEmp1No" layoutX="54.0" mnemonicParsing="false" text="No" toggleGroup="$saludEmp1Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="528.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="pensionEmp1Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="pensionEmp1No" layoutX="55.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="pensionEmp1Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="pensionEmp1Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="pensionEmp1No" layoutX="55.0" mnemonicParsing="false" text="No" toggleGroup="$pensionEmp1Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="863.0" layoutY="138.0">
                                              <children>
-                                                <RadioButton fx:id="embargoEmp1Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="embargoEmp1No" layoutX="66.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="embargoEmp1Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="embargoEmp1Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="embargoEmp1No" layoutX="66.0" mnemonicParsing="false" text="No" toggleGroup="$embargoEmp1Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="692.0" layoutY="225.0">
                                              <children>
-                                                <RadioButton fx:id="fondoEmp1Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="fondoEmp1No" layoutX="63.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="fondoEmp1Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="fondoEmp1Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="fondoEmp1No" layoutX="63.0" mnemonicParsing="false" text="No" toggleGroup="$fondoEmp1Grupo" />
                                              </children>
                                           </Group>
                                        </children>
@@ -214,8 +235,11 @@
                                           <TextField fx:id="exNoctFesEmp2" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
                                           <Group layoutX="428.0" layoutY="299.0">
                                              <children>
-                                                <RadioButton fx:id="festDiaEmp2Si" layoutY="1.0" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="festDiaEmp2No" layoutX="60.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="festDiaEmp2Si" layoutY="1.0" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="festDiaEmp2Group" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="festDiaEmp2No" layoutX="60.0" mnemonicParsing="false" text="No" toggleGroup="$festDiaEmp2Group" />
                                              </children>
                                           </Group>
                                        </children>
@@ -254,26 +278,38 @@
                                           </Label>
                                           <Group layoutX="224.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="saludEmp2Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="saludEmp2No" layoutX="54.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="saludEmp2Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="saludEmp2Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="saludEmp2No" layoutX="54.0" mnemonicParsing="false" text="No" toggleGroup="$saludEmp2Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="528.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="pensionEmp2Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="pensionEmp2No" layoutX="55.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="pensionEmp2Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="pensionEmp2Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="pensionEmp2No" layoutX="55.0" mnemonicParsing="false" text="No" toggleGroup="$pensionEmp2Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="863.0" layoutY="138.0">
                                              <children>
-                                                <RadioButton fx:id="embargoEmp2Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="embargoEmp2No" layoutX="66.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="embargoEmp2Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="embargoEmp2Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="embargoEmp2No" layoutX="66.0" mnemonicParsing="false" text="No" toggleGroup="$embargoEmp2Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="692.0" layoutY="225.0">
                                              <children>
-                                                <RadioButton fx:id="fondoEmp2Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="fondoEmp2No" layoutX="63.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="fondoEmp2Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="fondoEmp2Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="fondoEmp2No" layoutX="63.0" mnemonicParsing="false" text="No" toggleGroup="$fondoEmp2Grupo" />
                                              </children>
                                           </Group>
                                        </children>
@@ -350,8 +386,11 @@
                                           <TextField fx:id="exNoctFesEmp3" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
                                           <Group layoutX="428.0" layoutY="299.0">
                                              <children>
-                                                <RadioButton fx:id="festDiaEmp3Si" layoutY="1.0" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="festDiaEmp3No" layoutX="60.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="festDiaEmp3Si" layoutY="1.0" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="festDiaEmp3Group" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="festDiaEmp3No" layoutX="60.0" mnemonicParsing="false" text="No" toggleGroup="$festDiaEmp3Group" />
                                              </children>
                                           </Group>
                                        </children>
@@ -390,26 +429,38 @@
                                           </Label>
                                           <Group layoutX="224.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="saludEmp3Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="saludEmp3No" layoutX="54.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="saludEmp3Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="saludEmp3Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="saludEmp3No" layoutX="54.0" mnemonicParsing="false" text="No" toggleGroup="$saludEmp3Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="528.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="pensionEmp3Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="pensionEmp3No" layoutX="55.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="pensionEmp3Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="pensionEmp3Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="pensionEmp3No" layoutX="55.0" mnemonicParsing="false" text="No" toggleGroup="$pensionEmp3Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="863.0" layoutY="138.0">
                                              <children>
-                                                <RadioButton fx:id="embargoEmp3Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="embargoEmp3No" layoutX="66.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="embargoEmp3Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="embargoEmp3Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="embargoEmp3No" layoutX="66.0" mnemonicParsing="false" text="No" toggleGroup="$embargoEmp3Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="692.0" layoutY="225.0">
                                              <children>
-                                                <RadioButton fx:id="fondoEmp3Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="fondoEmp3No" layoutX="63.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="fondoEmp3Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="fondoEmp3Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="fondoEmp3No" layoutX="63.0" mnemonicParsing="false" text="No" toggleGroup="$fondoEmp3Grupo" />
                                              </children>
                                           </Group>
                                        </children>
@@ -486,8 +537,11 @@
                                           <TextField fx:id="exNoctFesEmp4" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
                                           <Group layoutX="428.0" layoutY="299.0">
                                              <children>
-                                                <RadioButton fx:id="festDiaEmp4Si" layoutY="1.0" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="festDiaEmp4No" layoutX="60.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="festDiaEmp4Si" layoutY="1.0" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="festDiaEmp4Group" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="festDiaEmp4No" layoutX="60.0" mnemonicParsing="false" text="No" toggleGroup="$festDiaEmp4Group" />
                                              </children>
                                           </Group>
                                        </children>
@@ -526,26 +580,38 @@
                                           </Label>
                                           <Group layoutX="224.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="saludEmp4Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="saludEmp4No" layoutX="54.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="saludEmp4Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="saludEmp4Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="saludEmp4No" layoutX="54.0" mnemonicParsing="false" text="No" toggleGroup="$saludEmp4Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="528.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="pensionEmp4Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="pensionEmp4No" layoutX="55.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="pensionEmp4Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="pensionEmp4Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="pensionEmp4No" layoutX="55.0" mnemonicParsing="false" text="No" toggleGroup="$pensionEmp4Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="863.0" layoutY="138.0">
                                              <children>
-                                                <RadioButton fx:id="embargoEmp4Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="embargoEmp4No" layoutX="66.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="embargoEmp4Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="embargoEmp4Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="embargoEmp4No" layoutX="66.0" mnemonicParsing="false" text="No" toggleGroup="$embargoEmp4Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="692.0" layoutY="225.0">
                                              <children>
-                                                <RadioButton fx:id="fondoEmp4Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="fondoEmp4No" layoutX="63.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="fondoEmp4Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="fondoEmp4Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="fondoEmp4No" layoutX="63.0" mnemonicParsing="false" text="No" toggleGroup="$fondoEmp4Grupo" />
                                              </children>
                                           </Group>
                                        </children>
@@ -622,8 +688,11 @@
                                           <TextField fx:id="exNoctFesEmp5" layoutX="809.0" layoutY="288.0" prefHeight="38.0" prefWidth="41.0" />
                                           <Group layoutX="428.0" layoutY="299.0">
                                              <children>
-                                                <RadioButton fx:id="festDiaEmp5Si" layoutY="1.0" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="festDiaEmp5No" layoutX="60.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="festDiaEmp5Si" layoutY="1.0" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="festDiaEmp5Group" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="festDiaEmp5No" layoutX="60.0" mnemonicParsing="false" text="No" toggleGroup="$festDiaEmp5Group" />
                                              </children>
                                           </Group>
                                        </children>
@@ -662,26 +731,38 @@
                                           </Label>
                                           <Group layoutX="224.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="saludEmp5Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="saludEmp5No" layoutX="54.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="saludEmp5Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="saludEmp5Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="saludEmp5No" layoutX="54.0" mnemonicParsing="false" text="No" toggleGroup="$saludEmp5Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="528.0" layoutY="139.0">
                                              <children>
-                                                <RadioButton fx:id="pensionEmp5Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="pensionEmp5No" layoutX="55.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="pensionEmp5Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="pensionEmp5Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="pensionEmp5No" layoutX="55.0" mnemonicParsing="false" text="No" toggleGroup="$pensionEmp5Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="863.0" layoutY="138.0">
                                              <children>
-                                                <RadioButton fx:id="embargoEmp5Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="embargoEmp5No" layoutX="66.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="embargoEmp5Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="embargoEmp5Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="embargoEmp5No" layoutX="66.0" mnemonicParsing="false" text="No" toggleGroup="$embargoEmp5Grupo" />
                                              </children>
                                           </Group>
                                           <Group layoutX="692.0" layoutY="225.0">
                                              <children>
-                                                <RadioButton fx:id="fondoEmp5Si" mnemonicParsing="false" text="Si" />
-                                                <RadioButton fx:id="fondoEmp5No" layoutX="63.0" mnemonicParsing="false" text="No" />
+                                                <RadioButton fx:id="fondoEmp5Si" mnemonicParsing="false" text="Si">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="fondoEmp5Grupo" />
+                                                   </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="fondoEmp5No" layoutX="63.0" mnemonicParsing="false" text="No" toggleGroup="$fondoEmp5Grupo" />
                                              </children>
                                           </Group>
                                        </children>

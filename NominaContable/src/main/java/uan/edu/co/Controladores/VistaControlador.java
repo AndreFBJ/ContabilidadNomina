@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 public class VistaControlador {
 	
@@ -36,278 +37,353 @@ public class VistaControlador {
 	DevengadosAdiciones devengado5 = new DevengadosAdiciones();
 	DescuentosYDeducciones descuentos5 = new DescuentosYDeducciones();
 
-	@FXML
-    private TextField sueldoEmp1;
+	 @FXML
+	    private TextField sueldoEmp1;
 
-    @FXML
-    private TextField bonifiEmp1;
+	    @FXML
+	    private TextField bonifiEmp1;
 
-    @FXML
-    private TextField comisioEmp1;
+	    @FXML
+	    private TextField comisioEmp1;
 
-    @FXML
-    private TextField exDiurEmp1;
+	    @FXML
+	    private TextField exDiurEmp1;
 
-    @FXML
-    private TextField exNoctuEmp1;
+	    @FXML
+	    private TextField exNoctuEmp1;
 
-    @FXML
-    private TextField exDiurFesEmp1;
+	    @FXML
+	    private TextField exDiurFesEmp1;
 
-    @FXML
-    private TextField exNoctFesEmp1;
+	    @FXML
+	    private TextField exNoctFesEmp1;
 
-    @FXML
-    private RadioButton festDiaEmp1Si;
+	    @FXML
+	    private RadioButton festDiaEmp1Si;
 
-    @FXML
-    private RadioButton festDiaEmp1No;
+	    @FXML
+	    private ToggleGroup festDiaEmp1Group;
 
-    @FXML
-    private TextField prestamoEmp1;
+	    @FXML
+	    private RadioButton festDiaEmp1No;
 
-    @FXML
-    private RadioButton saludEmp1Si;
+	    @FXML
+	    private TextField prestamoEmp1;
 
-    @FXML
-    private RadioButton saludEmp1No;
+	    @FXML
+	    private RadioButton saludEmp1Si;
 
-    @FXML
-    private RadioButton pensionEmp1Si;
+	    @FXML
+	    private ToggleGroup saludEmp1Grupo;
 
-    @FXML
-    private RadioButton pensionEmp1No;
+	    @FXML
+	    private RadioButton saludEmp1No;
 
-    @FXML
-    private RadioButton embargoEmp1Si;
+	    @FXML
+	    private RadioButton pensionEmp1Si;
 
-    @FXML
-    private RadioButton embargoEmp1No;
+	    @FXML
+	    private ToggleGroup pensionEmp1Grupo;
 
-    @FXML
-    private RadioButton fondoEmp1Si;
+	    @FXML
+	    private RadioButton pensionEmp1No;
 
-    @FXML
-    private RadioButton fondoEmp1No;
+	    @FXML
+	    private RadioButton embargoEmp1Si;
 
-    @FXML
-    private TextField sueldoEmp2;
+	    @FXML
+	    private ToggleGroup embargoEmp1Grupo;
 
-    @FXML
-    private TextField bonifiEmp2;
+	    @FXML
+	    private RadioButton embargoEmp1No;
 
-    @FXML
-    private TextField comisioEmp2;
+	    @FXML
+	    private RadioButton fondoEmp1Si;
 
-    @FXML
-    private TextField exDiurEmp2;
+	    @FXML
+	    private ToggleGroup fondoEmp1Grupo;
 
-    @FXML
-    private TextField exNoctuEmp2;
+	    @FXML
+	    private RadioButton fondoEmp1No;
 
-    @FXML
-    private TextField exDiurFesEmp2;
+	    @FXML
+	    private TextField sueldoEmp2;
 
-    @FXML
-    private TextField exNoctFesEmp2;
+	    @FXML
+	    private TextField bonifiEmp2;
 
-    @FXML
-    private RadioButton festDiaEmp2Si;
+	    @FXML
+	    private TextField comisioEmp2;
 
-    @FXML
-    private RadioButton festDiaEmp2No;
+	    @FXML
+	    private TextField exDiurEmp2;
 
-    @FXML
-    private TextField prestamoEmp2;
+	    @FXML
+	    private TextField exNoctuEmp2;
 
-    @FXML
-    private RadioButton saludEmp2Si;
+	    @FXML
+	    private TextField exDiurFesEmp2;
 
-    @FXML
-    private RadioButton saludEmp2No;
+	    @FXML
+	    private TextField exNoctFesEmp2;
 
-    @FXML
-    private RadioButton pensionEmp2Si;
+	    @FXML
+	    private RadioButton festDiaEmp2Si;
 
-    @FXML
-    private RadioButton pensionEmp2No;
+	    @FXML
+	    private ToggleGroup festDiaEmp2Group;
 
-    @FXML
-    private RadioButton embargoEmp2Si;
+	    @FXML
+	    private RadioButton festDiaEmp2No;
 
-    @FXML
-    private RadioButton embargoEmp2No;
+	    @FXML
+	    private TextField prestamoEmp2;
 
-    @FXML
-    private RadioButton fondoEmp2Si;
+	    @FXML
+	    private RadioButton saludEmp2Si;
 
-    @FXML
-    private RadioButton fondoEmp2No;
+	    @FXML
+	    private ToggleGroup saludEmp2Grupo;
 
-    @FXML
-    private TextField sueldoEmp3;
+	    @FXML
+	    private RadioButton saludEmp2No;
 
-    @FXML
-    private TextField bonifiEmp3;
+	    @FXML
+	    private RadioButton pensionEmp2Si;
 
-    @FXML
-    private TextField comisioEmp3;
+	    @FXML
+	    private ToggleGroup pensionEmp2Grupo;
 
-    @FXML
-    private TextField exDiurEmp3;
+	    @FXML
+	    private RadioButton pensionEmp2No;
 
-    @FXML
-    private TextField exNoctuEmp3;
+	    @FXML
+	    private RadioButton embargoEmp2Si;
 
-    @FXML
-    private TextField exDiurFesEmp3;
+	    @FXML
+	    private ToggleGroup embargoEmp2Grupo;
 
-    @FXML
-    private TextField exNoctFesEmp3;
+	    @FXML
+	    private RadioButton embargoEmp2No;
 
-    @FXML
-    private RadioButton festDiaEmp3Si;
+	    @FXML
+	    private RadioButton fondoEmp2Si;
 
-    @FXML
-    private RadioButton festDiaEmp3No;
+	    @FXML
+	    private ToggleGroup fondoEmp2Grupo;
 
-    @FXML
-    private TextField prestamoEmp3;
+	    @FXML
+	    private RadioButton fondoEmp2No;
 
-    @FXML
-    private RadioButton saludEmp3Si;
+	    @FXML
+	    private TextField sueldoEmp3;
 
-    @FXML
-    private RadioButton saludEmp3No;
+	    @FXML
+	    private TextField bonifiEmp3;
 
-    @FXML
-    private RadioButton pensionEmp3Si;
+	    @FXML
+	    private TextField comisioEmp3;
 
-    @FXML
-    private RadioButton pensionEmp3No;
+	    @FXML
+	    private TextField exDiurEmp3;
 
-    @FXML
-    private RadioButton embargoEmp3Si;
+	    @FXML
+	    private TextField exNoctuEmp3;
 
-    @FXML
-    private RadioButton embargoEmp3No;
+	    @FXML
+	    private TextField exDiurFesEmp3;
 
-    @FXML
-    private RadioButton fondoEmp3Si;
+	    @FXML
+	    private TextField exNoctFesEmp3;
 
-    @FXML
-    private RadioButton fondoEmp3No;
+	    @FXML
+	    private RadioButton festDiaEmp3Si;
 
-    @FXML
-    private TextField sueldoEmp4;
+	    @FXML
+	    private ToggleGroup festDiaEmp3Group;
 
-    @FXML
-    private TextField bonifiEmp4;
+	    @FXML
+	    private RadioButton festDiaEmp3No;
 
-    @FXML
-    private TextField comisioEmp4;
+	    @FXML
+	    private TextField prestamoEmp3;
 
-    @FXML
-    private TextField exDiurEmp4;
+	    @FXML
+	    private RadioButton saludEmp3Si;
 
-    @FXML
-    private TextField exNoctuEmp4;
+	    @FXML
+	    private ToggleGroup saludEmp3Grupo;
 
-    @FXML
-    private TextField exDiurFesEmp4;
+	    @FXML
+	    private RadioButton saludEmp3No;
 
-    @FXML
-    private TextField exNoctFesEmp4;
+	    @FXML
+	    private RadioButton pensionEmp3Si;
 
-    @FXML
-    private RadioButton festDiaEmp4Si;
+	    @FXML
+	    private ToggleGroup pensionEmp3Grupo;
 
-    @FXML
-    private RadioButton festDiaEmp4No;
+	    @FXML
+	    private RadioButton pensionEmp3No;
 
-    @FXML
-    private TextField prestamoEmp4;
+	    @FXML
+	    private RadioButton embargoEmp3Si;
 
-    @FXML
-    private RadioButton saludEmp4Si;
+	    @FXML
+	    private ToggleGroup embargoEmp3Grupo;
 
-    @FXML
-    private RadioButton saludEmp4No;
+	    @FXML
+	    private RadioButton embargoEmp3No;
 
-    @FXML
-    private RadioButton pensionEmp4Si;
+	    @FXML
+	    private RadioButton fondoEmp3Si;
 
-    @FXML
-    private RadioButton pensionEmp4No;
+	    @FXML
+	    private ToggleGroup fondoEmp3Grupo;
 
-    @FXML
-    private RadioButton embargoEmp4Si;
+	    @FXML
+	    private RadioButton fondoEmp3No;
 
-    @FXML
-    private RadioButton embargoEmp4No;
+	    @FXML
+	    private TextField sueldoEmp4;
 
-    @FXML
-    private RadioButton fondoEmp4Si;
+	    @FXML
+	    private TextField bonifiEmp4;
 
-    @FXML
-    private RadioButton fondoEmp4No;
+	    @FXML
+	    private TextField comisioEmp4;
 
-    @FXML
-    private TextField sueldoEmp5;
+	    @FXML
+	    private TextField exDiurEmp4;
 
-    @FXML
-    private TextField bonifiEmp5;
+	    @FXML
+	    private TextField exNoctuEmp4;
 
-    @FXML
-    private TextField comisioEmp5;
+	    @FXML
+	    private TextField exDiurFesEmp4;
 
-    @FXML
-    private TextField exDiurEmp5;
+	    @FXML
+	    private TextField exNoctFesEmp4;
 
-    @FXML
-    private TextField exNoctuEmp5;
+	    @FXML
+	    private RadioButton festDiaEmp4Si;
 
-    @FXML
-    private TextField exDiurFesEmp5;
+	    @FXML
+	    private ToggleGroup festDiaEmp4Group;
 
-    @FXML
-    private TextField exNoctFesEmp5;
+	    @FXML
+	    private RadioButton festDiaEmp4No;
 
-    @FXML
-    private RadioButton festDiaEmp5Si;
+	    @FXML
+	    private TextField prestamoEmp4;
 
-    @FXML
-    private RadioButton festDiaEmp5No;
+	    @FXML
+	    private RadioButton saludEmp4Si;
 
-    @FXML
-    private TextField prestamoEmp5;
+	    @FXML
+	    private ToggleGroup saludEmp4Grupo;
 
-    @FXML
-    private RadioButton saludEmp5Si;
+	    @FXML
+	    private RadioButton saludEmp4No;
 
-    @FXML
-    private RadioButton saludEmp5No;
+	    @FXML
+	    private RadioButton pensionEmp4Si;
 
-    @FXML
-    private RadioButton pensionEmp5Si;
+	    @FXML
+	    private ToggleGroup pensionEmp4Grupo;
 
-    @FXML
-    private RadioButton pensionEmp5No;
+	    @FXML
+	    private RadioButton pensionEmp4No;
 
-    @FXML
-    private RadioButton embargoEmp5Si;
+	    @FXML
+	    private RadioButton embargoEmp4Si;
 
-    @FXML
-    private RadioButton embargoEmp5No;
+	    @FXML
+	    private ToggleGroup embargoEmp4Grupo;
 
-    @FXML
-    private RadioButton fondoEmp5Si;
+	    @FXML
+	    private RadioButton embargoEmp4No;
 
-    @FXML
-    private RadioButton fondoEmp5No;
+	    @FXML
+	    private RadioButton fondoEmp4Si;
 
-    @FXML
-    private Button generarNominaTotal;
+	    @FXML
+	    private ToggleGroup fondoEmp4Grupo;
+
+	    @FXML
+	    private RadioButton fondoEmp4No;
+
+	    @FXML
+	    private TextField sueldoEmp5;
+
+	    @FXML
+	    private TextField bonifiEmp5;
+
+	    @FXML
+	    private TextField comisioEmp5;
+
+	    @FXML
+	    private TextField exDiurEmp5;
+
+	    @FXML
+	    private TextField exNoctuEmp5;
+
+	    @FXML
+	    private TextField exDiurFesEmp5;
+
+	    @FXML
+	    private TextField exNoctFesEmp5;
+
+	    @FXML
+	    private RadioButton festDiaEmp5Si;
+
+	    @FXML
+	    private ToggleGroup festDiaEmp5Group;
+
+	    @FXML
+	    private RadioButton festDiaEmp5No;
+
+	    @FXML
+	    private TextField prestamoEmp5;
+
+	    @FXML
+	    private RadioButton saludEmp5Si;
+
+	    @FXML
+	    private ToggleGroup saludEmp5Grupo;
+
+	    @FXML
+	    private RadioButton saludEmp5No;
+
+	    @FXML
+	    private RadioButton pensionEmp5Si;
+
+	    @FXML
+	    private ToggleGroup pensionEmp5Grupo;
+
+	    @FXML
+	    private RadioButton pensionEmp5No;
+
+	    @FXML
+	    private RadioButton embargoEmp5Si;
+
+	    @FXML
+	    private ToggleGroup embargoEmp5Grupo;
+
+	    @FXML
+	    private RadioButton embargoEmp5No;
+
+	    @FXML
+	    private RadioButton fondoEmp5Si;
+
+	    @FXML
+	    private ToggleGroup fondoEmp5Grupo;
+
+	    @FXML
+	    private RadioButton fondoEmp5No;
+
+	    @FXML
+	    private Button generarNominaTotal;
     
     @FXML
     void calculoTotalNomina(ActionEvent event) {
